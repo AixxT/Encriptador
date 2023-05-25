@@ -1,0 +1,13 @@
+body {
+    background-color: rgb(52, 49, 53);
+}
+
+nav {
+    display: inline-block;
+    padding: 0.9em 3em;
+    /* background: #b6acac; */
+}
+
+.vector-a {
+    fill: rgba(254, 88, 98, 1);
+}
