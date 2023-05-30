@@ -1,17 +1,25 @@
 body {
-    background-color: rgb(52, 49, 53);
+    background-color: #001220;
     font-family: "Raleway", sans-serif;
+    margin: 0;
 }
 
 nav {
-    display: inline;
-    margin: 1em auto 0;
+    position: absolute;
+    margin: 0.3em auto 0;
     padding: 0.9em 3em;
     /* background: #b6acac; */
 }
 
+main {
+    /* z-index: 950; */
+    height: 100%;
+    width: 100%;
+}
+
 .vector-a {
     fill: rgba(254, 88, 98, 1);
+    z-index: 950;
 }
 
 .mensaje {
@@ -31,7 +39,7 @@ nav {
 }
 
 #vector-alerta {
-    fill: rgb(229, 90, 35);
+    fill: #FA7268;
     background: #bbaeae;
     display: inline-block;
 
@@ -40,9 +48,10 @@ nav {
     position: absolute;
     top: 6em;
     left: 10em;
+    display: inline-block;
 }
 .form p {
-    color:  rgb(229, 90, 35);
+    color:  #FA7268;
     font-weight: 400;
     font-size: 1em;
     display: inline-block;
@@ -74,18 +83,34 @@ nav {
 .button-enc:hover {
     background-color: rgb(255, 204, 207) ;
     color: rgba(254, 88, 98, 1);
+    cursor: pointer;
 }
 
 .button-desenc {
     background-color: rgb(255, 204, 207);
-    color:  rgb(229, 90, 35);
-    border: 1px solid rgb(229, 90, 35);
+    color: #FA7268;
+    border: 1px solid #FA7268;
     transition: 200ms;
 }
 
 .button-desenc:hover {
-    background-color: rgb(229, 90, 35);
+    background-color: #FA7268;
     color: rgb(255, 204, 207);
+    cursor: pointer;
+}
+
+/* Wave spacer */
+
+.spacer {
+    aspect-ratio: 18/40;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.wave {
+    background-image: url(./Recursos/layered-waves-haikei.svg);
 }
 
 
