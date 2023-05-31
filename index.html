@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,7 +27,7 @@
     <main>
         <section class="form">
 
-            <textarea class="mensaje" cols="40" rows="10">Ingrese el texto aquí</textarea>
+            <textarea class="mensaje" cols="40" rows="10" onfocus="this.value=''" onkeypress="return (event.charCode >= 97 && event.charCode <= 122) || event.charCode == 32">Ingrese el texto aquí</textarea>
             <div class="alert">
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g id="Group">
@@ -44,7 +44,7 @@
 
         </section>
 
-        <section class="ventana-traduccion" >
+        <section class="ventana-traduccion">
             <!-- <div id="no-data-window">
                 <div class="imagen-encriptador"></div>
                 <h3 class="alerta-no-input">Ningún mensaje fue encontrado</h3>
@@ -52,15 +52,16 @@
             </div> -->
 
             <div id="data-window">
-                <textarea class="encripted-text" cols="31" rows="20"></textarea>
+                <textarea readonly class="encripted-text" cols="31" rows="20"></textarea>
                 <input type="submit" value="Copiar" class="button-copy">
 
             </div>
 
-            
+
         </section>
     </main>
-
+    <script src="./script.js" ></script>    
+    </script>
 </body>
 
 </html>

@@ -63,6 +63,10 @@ main {
     display: inline-block;
     margin: 0 3em 0 7em;
 }
+.alert {
+    margin: 1em;
+}
+
 .form p {
     color:  #FA7268;
     font-weight: 400;
@@ -162,6 +166,10 @@ main {
     display: inline;
     border: none;
     resize: none;
+}
+
+.encripted-text:focus {
+    outline: none;
 }
 
 .button-copy {
