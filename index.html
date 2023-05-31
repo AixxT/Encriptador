@@ -26,9 +26,8 @@
 
     <main>
         <section class="form">
-            
-            <textarea class="mensaje" cols="50" rows="14">Ingrese el texto aquí</textarea>
-            
+
+            <textarea class="mensaje" cols="40" rows="10">Ingrese el texto aquí</textarea>
             <div class="alert">
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g id="Group">
@@ -39,16 +38,26 @@
                 <p>Solo letras minúsculas y sin acentos</p>
             </div>
             <div class="botones-encriptador">
-                <input type="submit" value="Encriptar"  class="button-enc">
+                <input type="submit" value="Encriptar" class="button-enc">
                 <input type="submit" value="Desencriptar" class="button-desenc">
             </div>
-            
+
         </section>
 
-        <div class="spacer wave "></div>
+        <section class="ventana-traduccion" >
+            <!-- <div id="no-data-window">
+                <div class="imagen-encriptador"></div>
+                <h3 class="alerta-no-input">Ningún mensaje fue encontrado</h3>
+                <h5>Ingresa el texto que desees encriptar o desencriptar</h6>
+            </div> -->
 
-        <section class="ventana-traduccion">
+            <div id="data-window">
+                <textarea class="encripted-text" cols="31" rows="20"></textarea>
+                <input type="submit" value="Copiar" class="button-copy">
 
+            </div>
+
+            
         </section>
     </main>
 
