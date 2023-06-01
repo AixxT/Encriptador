@@ -2,6 +2,7 @@ body {
     background-color: #001220;
     font-family: "Raleway", sans-serif;
     margin: 0;
+    display: flex;
     /* overflow-y: hidden; */
     background-image: url(./Recursos/layered-waves-haikei.svg);
     aspect-ratio: 960/480;
@@ -127,7 +128,7 @@ main {
     flex-grow: 1;
     height: 80%;
     max-width: 300px;
-    margin: 0 7em 0 0;
+    margin: 0 3em 0 0;
     display: flex;
     align-items: center;
  }
@@ -195,8 +196,24 @@ main {
 }
 .button-copy:hover {
     background-color: #FA7268;
-    color: rgb(255, 204, 207);
+    color: #ffcccf;
     cursor: pointer;
 }
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 1.2em;
+}
+
+.github-icon svg, .linkedin-icon svg {
+    fill: #001220 ;
+}
+
+.github-icon:hover, .linkedin-icon:hover {
+    filter: drop-shadow(0 0 4px #ffcccf);
+}
+
 
 
