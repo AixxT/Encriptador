@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,7 +29,8 @@
     <main>
         <section class="form">
 
-            <textarea class="mensaje" cols="40" rows="10" onfocus="this.value=''" onkeypress="return (event.charCode >= 97 && event.charCode <= 122) || event.charCode == 32">Ingrese el texto aquí</textarea>
+            <textarea class="mensaje" cols="40" rows="10" placeholder="Ingrese su texto aquí " onfocus="this.value=''"
+                onkeypress="return (event.charCode >= 97 && event.charCode <= 122) || event.charCode == 32"></textarea>
             <div class="alert">
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g id="Group">
@@ -45,14 +48,15 @@
         </section>
 
         <section class="ventana-traduccion">
-            <!-- <div id="no-data-window">
+            <div id="no-data-window" style="display:block">
                 <div class="imagen-encriptador"></div>
                 <h3 class="alerta-no-input">Ningún mensaje fue encontrado</h3>
                 <h5>Ingresa el texto que desees encriptar o desencriptar</h6>
-            </div> -->
+            </div>
 
-            <div id="data-window">
+            <div id="hidden" class="data-window" style="display: none;">
                 <textarea readonly class="encripted-text" cols="31" rows="20"></textarea>
+                <div class="tooltip" data-tooltip="Copiar al portapapeles"></div>
                 <input type="submit" value="Copiar" class="button-copy">
 
             </div>
@@ -60,7 +64,7 @@
 
         </section>
     </main>
-    <script src="./script.js" ></script>    
+    <script src="./script.js"></script>
     </script>
 </body>
 

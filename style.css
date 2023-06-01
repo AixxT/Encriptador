@@ -143,20 +143,29 @@ main {
 .ventana-traduccion h3 {
     text-align: center;
     color: #001220;
+    margin: 1em 0;
     font-size: 1.2em;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .ventana-traduccion h5 {
+    display: flex;
+    flex-direction: column;
+    align-items: normal;
+    justify-content: center;
     text-align: center;
     color: #10334f;
     font-size: 1em;
+    margin: 1em;
+    font-weight: bold;
+    line-height: 1.2em;
 }
 
-#data-window {
-    display: flex;
+.data-window {
     flex-direction: column;
+    justify-content: center;
 }
+
 .encripted-text {
     font-family: "Raleway", sans-serif;
     font-size: 1.1em;
@@ -177,8 +186,17 @@ main {
     margin-top: 1em;
 }
 
+.animate__animated.animate__fadeInDown {
+    --animate-duration: 0.5s;
+}
+
+.animate__animated.animate__fadeOutUp {
+    --animate-duration: 0.5s;
+}
 .button-copy:hover {
     background-color: #FA7268;
     color: rgb(255, 204, 207);
     cursor: pointer;
 }
+
+
